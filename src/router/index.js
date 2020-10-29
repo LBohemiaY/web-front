@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Home from '@/Home'
 
 Vue.use(Router)
 
@@ -7,9 +8,15 @@ export default new Router({
   routes: [
     // 主页
     {
-      path: '/',
+      path: '',
       name: 'Home',
-      component: () => import('@/views/home/index')
+      component: Home,
+      children: [
+        {
+          path: '/',
+          component: () => import('@/views/home/HomeIndex')
+        }
+      ]
     }
   ]
 })
