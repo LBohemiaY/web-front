@@ -1,19 +1,13 @@
 <template>
   <div id="home">
     <el-container>
-    	
     	<base-header :activeIndex="activeIndex"></base-header>
-		
 		<!-- header上点击相应的item匹配到的路由组件将会展示到router-view当中 -->
 		<router-view class="me-container"></router-view>
-
 		<!-- footer为页面的下脚标 用于展示design等  -->
 		<base-footer v-show="footerShow"></base-footer>
-		  
 	</el-container>
-		
   </div>
-  
 </template>
 
 <script>

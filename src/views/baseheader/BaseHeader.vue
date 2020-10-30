@@ -1,49 +1,23 @@
 <template>
   <el-header class="me-area">
-    <el-row class="me-header">
-      <!-- <el-col :span="4" class="me-header-left">
-        <router-link to="/" class="me-title">
-          <img src="../assets/img/logo.png"/>
-        </router-link>
-      </el-col> -->
-      <el-col v-if="!simple" :span="16">
-        <el-menu :router=true menu-trigger="click" active-text-color="#5FB878" :default-active="activeIndex"
-                 mode="horizontal">
-          <el-menu-item index="/">首页</el-menu-item>
-          <el-menu-item index="/">文章分类</el-menu-item>
-          <el-menu-item index="/">标签</el-menu-item>
-          <el-menu-item index="/">文章归档</el-menu-item>
-          <el-menu-item index="/">日志</el-menu-item>
-          <el-menu-item index="/">留言板</el-menu-item>
-          <el-col :span="4" :offset="4">
-            <el-menu-item index="/write"><i class="el-icon-edit"></i>写文章</el-menu-item>
-          </el-col>
-        </el-menu>
-      </el-col>
-      <template v-else>
-        <slot></slot>
-      </template>
+    <el-row>
+      <el-menu :router=true menu-trigger="click" active-text-color="#5FB878" :default-active="activeIndex" mode="horizontal">
+        <el-menu-item index="/">首页</el-menu-item>
+        <el-menu-item index="/category/all">文章分类</el-menu-item>
+        <el-menu-item index="/tag/all">标签</el-menu-item>
+        <el-menu-item index="/archives">文章归档</el-menu-item>
+        <el-menu-item index="/log">日志</el-menu-item>
+        <el-menu-item index="/messageBoard">留言板</el-menu-item>
+        <el-col :span="4" :offset="4">
+          <el-menu-item index="/write"><i class="el-icon-edit"></i>写文章</el-menu-item>
+        </el-col>
+      </el-menu>
     </el-row>
   </el-header>
 </template>
 
 <script>
-  export default {
-    name: 'BaseHeader',
-    props: {
-      activeIndex: String,
-      simple: {
-        type: Boolean,
-        default: false
-      }
-    },
-    data() {
-      return {}
-    },
-    methods: {
 
-    }
-  }
 </script>
 
 <style>
