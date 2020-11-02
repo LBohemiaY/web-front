@@ -1,5 +1,5 @@
 <template>
-  <div v-title data-title="Bohemia's Image">
+  <!-- <div v-title data-title="Card Image"> -->
     <el-container>
       <el-main class="me-articles">
       </el-main>
@@ -11,7 +11,7 @@
         <card-article cardHeader="最新文章" :articles="newArticles"></card-article>
       </el-aside>
     </el-container>
-  </div>
+  <!-- </div> -->
 </template>
 
 <script>
