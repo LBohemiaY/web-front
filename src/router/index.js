@@ -28,6 +28,18 @@ export default new Router({
           component: () => import('@/views/common/Log')
         }
       ]
+    },
+    //登录
+    {
+      path : '/login',
+      name : 'login',
+      component : () => import('@/views/common/Login')
+    },
+    //注册
+    {
+      path : '/register',
+      name : 'register',
+      component : () => import('@/views/common/Register')
     }
   ]
 })

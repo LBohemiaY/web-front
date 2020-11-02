@@ -2,8 +2,8 @@
   <el-card>
     <h1 class="me-author-name">LBohemiaY</h1>
     <div class="me-author-description">
-      <span><i class="el-icon-location-outline"></i> &nbsp;四川|杭州</span>
-      <span><i class="me-icon-job"></i> &nbsp;菜鸡程序员</span>
+      <span><i class="el-icon-location-outline"></i> &nbsp;杭州</span>
+      <span><i class="me-icon-job"></i> &nbsp;程序员</span>
     </div>
     <div class="me-author-tool">
       <i @click="showTool(qq)" :title="qq.title" class="me-icon-QQ"></i>
@@ -21,7 +21,7 @@
         qq: {title: 'QQ', message: '704398960'},
         github: {
           title: 'github',
-          message: '<a target="_blank" href="https://github.com/shimh-develop">https://github.com/shimh-develop</a>'
+          message: '<a target="_blank" href="https://github.com/LBohemiaY">https://github.com/LBohemiaY</a>'
         }
       }
     },
