@@ -4,9 +4,7 @@
       <p>
         Designed by
         <strong>
-          <router-link to="/" class="me-login-design-color"
-            >Bohemia</router-link
-          >
+          <router-link to="/" class="me-login-design-color">Bohemia</router-link>
         </strong>
       </p>
     </div>
